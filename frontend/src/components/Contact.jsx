@@ -14,11 +14,11 @@ const Contact = () => {
     <div className="mt-12 text-bold text-black text-2xl text-center">
         Plot No.9B, Knowledge Park 3 (Greater Noida)
         <br></br>
-        Phone: + 91 - 9310464735
+        Phone: + 91 - 93XXXXXX35
         <br></br>
-        Email- homieshostel34@gmail.com
+        Email- hostel34@gmail.com
         <br></br>
-        Google- www.homieshostel.in
+        Google- www.hostel.in
     </div>
     <Footer/>
     </>

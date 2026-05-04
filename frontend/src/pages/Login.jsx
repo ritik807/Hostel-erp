@@ -19,14 +19,15 @@ const Login = () => {
         role,
       });
 
-      // 💾 SAVE TOKEN + ROLE (IMPORTANT FIX)
       localStorage.setItem("token", res.data.token);
-      localStorage.setItem("role", res.data.role); // 🔥 ADD THIS
+      localStorage.setItem("role", res.data.role); // 
 
-      // 🔥 ROLE BASED REDIRECT (FIXED ROUTES)
+
       if (res.data.role === "admin") {
+        alert("admin login successful");
         navigate("/admin", { replace: true });
       } else {
+        alert("Student login successful");
         navigate("/student", { replace: true });
       }
 
@@ -72,10 +73,15 @@ const Login = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+          className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 hover:cursor-pointer"
         >
           Login
         </button>
+
+        <span classname ="opacity: 0.5"> Admin email- admin@gmail.com
+          <br></br>
+          Admin password- admin123
+        </span>
 
       </form>
     </div>
